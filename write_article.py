@@ -6,6 +6,18 @@ import re
 client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
 
 TOPICS = [
+    "how AI is transforming cancer diagnosis and treatment",
+    "large language models in medical research and healthcare",
+    "AI ethics in clinical decision making",
+    "machine learning for drug discovery and development",
+    "AI tools every data scientist should know in 2026",
+    "how AI is personalising cancer chemotherapy",
+    "responsible AI in healthcare systems",
+    "the role of AI in predicting patient outcomes",
+    "AI and mathematical modelling in precision oncology",
+    "how neural networks are being used in medical imaging",
+    "AI regulation in healthcare — what researchers need to know",
+    "the future of AI-assisted surgery and treatment planning",
     "mathematical oncology and cancer modelling",
     "AI in healthcare and medicine",
     "life as a woman in STEM and mathematics",
