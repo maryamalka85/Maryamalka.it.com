@@ -1,76 +1,48 @@
-name: Deploy Hugo PaperMod Demo to Pages
+baseURL = "https://maryamalka.it.com/"
+title = "Maryam Alka"
+paginate = 5
+theme = "PaperMod"
 
-on:
-  push:
-    paths-ignore:
-      - "images/**"
-      - "LICENSE"
-      - "README.md"
-    branches:
-      - master
-      - exampleSite
-  workflow_dispatch:
-    # manual run
-    inputs:
-      hugoVersion:
-        description: "Hugo Version"
-        required: false
-        default: "0.146.0"
+enableRobotsTXT = true
+enableEmoji = true
 
-# Allow one concurrent deployment
-concurrency:
-  group: "pages"
-  cancel-in-progress: true
+[params]
+  author = "Maryam Alka"
+  description = "Applied Mathematician | Mathematical Oncologist | AI Researcher"
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
 
-# Default to bash
-defaults:
-  run:
-    shell: bash
+  [params.homeInfoParams]
+    Title = "Hi, I'm Maryam 👋"
+    Content = """
+Applied Mathematician and PhD researcher at the University of Birmingham, \
+developing mathematical models of tumour growth under hypoxia and chemotherapy. \
+I work at the intersection of mathematics, AI, and medicine — \
+building tools that could help personalise cancer treatment.
+"""
 
-jobs:
-  # Build job
-  build:
-    permissions:
-      contents: read
-    runs-on: ubuntu-latest
-    env:
-      HUGO_VERSION: ${{ github.event.inputs.hugoVersion || '0.146.0' }}
-    steps:
-      - name: Install Hugo CLI
-        run: |
-          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_linux-amd64.deb \
-          && sudo dpkg -i ${{ runner.temp }}/hugo.deb
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          ref: exampleSite
-      - name: Setup Pages
-        id: pages
-        uses: actions/configure-pages@v5
-      - name: Get Theme
-        run: git submodule update --init --recursive
-      - name: Update theme to Latest commit
-        run: git submodule update --remote --merge
-      - name: Build with Hugo
-        run: |
-          hugo \
-            --buildDrafts --gc \
-            --baseURL ${{ steps.pages.outputs.base_url }}
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./public
-  # Deployment job
-  deploy:
-    permissions:
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+  [[params.socialIcons]]
+    name = "email"
+    url = "mailto:mxa1541@student.bham.ac.uk"
+
+  [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://linkedin.com/in/maryamalka"
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/maryamalka"
+
+[menu]
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 1
+  [[menu.main]]
+    name = "Writing"
+    url = "/posts/"
+    weight = 2
