@@ -13,13 +13,20 @@ enableEmoji = true
 
 [params]
   author = "Maryam Alka"
-  description = "Applied Mathematician | Mathematical Oncologist | AI Researcher"
+  description = " AI Researcher | Applied Mathematician | Mathematical Oncologist"
   defaultTheme = "auto"
   ShowReadingTime = true
   ShowShareButtons = false
   ShowPostNavLinks = true
   ShowBreadCrumbs = true
   ShowCodeCopyButtons = true
+  [params.profileMode]
+    enabled = true
+    title = "Maryam Alka"
+    subtitle = "Applied Mathematician | AI Researcher | Mathematical Oncologist"
+    imageUrl = "avatar.jpg"
+    imageTitle = "Maryam Alka"
+
 
   [params.homeInfoParams]
     Title = "Hi, I'm Maryam 👋"
