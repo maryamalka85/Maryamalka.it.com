@@ -5,7 +5,6 @@ import re
 
 client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
 
-# Your topics — Claude rotates through these
 TOPICS = [
     "mathematical oncology and cancer modelling",
     "AI in healthcare and medicine",
@@ -17,22 +16,35 @@ TOPICS = [
     "Bayesian methods in biomedical research",
 ]
 
-# Pick topic based on current week number so it rotates automatically
 week = date.today().isocalendar()[1]
 topic = TOPICS[week % len(TOPICS)]
 
-print(f"Writing article about: {topic}")
+print("Writing article about: " + topic)
+
+prompt = "You are writing for the personal website of Maryam Alka, an Applied Mathematician and PhD researcher at the University of Birmingham working on mathematical oncology. Write a high quality 500-word blog article about: " + topic + ". The audience is a mix of general public and professionals. Use clear accessible language. Tone: neutral and factual. Format your response EXACTLY like this with no extra text before or after. TITLE: [title here] SLUG: [url-friendly-title-with-hyphens] DESCRIPTION: [one sentence summary] ARTICLE: [article content in markdown]"
 
 response = client.messages.create(
     model="claude-opus-4-20250514",
     max_tokens=1500,
-    messages=[{
-        "role": "user",
-        "content": f"""You are writing for the personal website of Maryam Alka — an Applied Mathematician and PhD researcher at the University of Birmingham working on mathematical oncology, specifically phase-field modelling of tumour growth under hypoxia and chemotherapy.
+    messages=[{"role": "user", "content": prompt}]
+)
 
-Write a high quality 500-word blog article about: {topic}
+text = response.content[0].text
+title = text.split("TITLE:")[1].split("SLUG:")[0].strip()
+slug = text.split("SLUG:")[1].split("DESCRIPTION:")[0].strip()
+description = text.split("DESCRIPTION:")[1].split("ARTICLE:")[0].strip()
+article = text.split("ARTICLE:")[1].strip()
 
-The audience is a mix of general public and professionals. Use clear, accessible language. No jargon without explanation. Tone: neutral and factual. First person where natural.
+slug = re.sub(r'[^a-z0-9-]', '', slug.lower().replace(' ', '-'))
 
-Format your response EXACTLY like this with no extra text before or after:
-TITLE: [compelling title here​​​​​​​​​​​​​​​​
+today = date.today().isoformat()
+filename = "content/posts/" + today + "-" + slug + ".md"
+
+content = "---\ntitle: \"" + title + "\"\ndate: " + today + "\ndescription: \"" + description + "\"\ntags: [\"" + topic.split()[0] + "\"]\n---\n\n" + article
+
+os.makedirs("content/posts", exist_ok=True)
+with open(filename, "w") as f:
+    f.write(content)
+
+print("Article saved: " + filename)
+print("Title: " + title)
