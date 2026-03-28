@@ -25,7 +25,7 @@ enableEmoji = true
     enabled = true
     title = "Maryam Alka"
     subtitle = "AI Researcher | Applied Mathematician | Mathematical Oncologist"
-    imageUrl = "images/1150.jpeg"
+    imageUrl = "/images/1150.jpeg"
     imageTitle = "Maryam Alka"
 
   [[params.socialIcons]]
