@@ -1,10 +1,12 @@
 baseURL = "https://maryamalka.it.com/"
 title = "Maryam Alka"
-paginate = 5
 theme = "PaperMod"
 
 enableRobotsTXT = true
 enableEmoji = true
+
+[pagination]
+  pagerSize = 5
 
 [params]
   author = "Maryam Alka"
