@@ -1,6 +1,9 @@
 baseURL = "https://maryamalka.it.com/"
 title = "Maryam Alka"
-theme = "PaperMod"
+[module]
+  [[module.imports]]
+    path = "github.com/adityatelange/hugo-PaperMod"
+
 
 enableRobotsTXT = true
 enableEmoji = true
