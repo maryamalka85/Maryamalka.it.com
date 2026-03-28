@@ -1,9 +1,9 @@
 baseURL = "https://maryamalka.it.com/"
 title = "Maryam Alka"
+
 [module]
   [[module.imports]]
     path = "github.com/adityatelange/hugo-PaperMod"
-
 
 enableRobotsTXT = true
 enableEmoji = true
@@ -13,24 +13,20 @@ enableEmoji = true
 
 [params]
   author = "Maryam Alka"
-  description = " AI Researcher | Applied Mathematician | Mathematical Oncologist"
+  description = "AI Researcher | Applied Mathematician | Mathematical Oncologist"
   defaultTheme = "auto"
   ShowReadingTime = true
   ShowShareButtons = false
   ShowPostNavLinks = true
   ShowBreadCrumbs = true
   ShowCodeCopyButtons = true
+
   [params.profileMode]
     enabled = true
     title = "Maryam Alka"
-    subtitle = "Applied Mathematician | AI Researcher | Mathematical Oncologist"
+    subtitle = "AI Researcher | Applied Mathematician | Mathematical Oncologist"
     imageUrl = "1150.jpeg"
     imageTitle = "Maryam Alka"
-
-
-  [params.homeInfoParams]
-    Title = "Hi, I'm Maryam 👋"
-    Content = "Applied Mathematician and PhD researcher at the University of Birmingham, developing mathematical models of tumour growth under hypoxia and chemotherapy. I work at the intersection of mathematics, AI, and medicine."
 
   [[params.socialIcons]]
     name = "email"
