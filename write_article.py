@@ -33,7 +33,7 @@ topic = TOPICS[week % len(TOPICS)]
 
 print("Writing article about: " + topic)
 
-prompt = "You are writing for the personal website of Maryam Alka, an Applied Mathematician and PhD researcher at the University of Birmingham working on mathematical oncology. Write a high quality 500-word blog article about: " + topic + ". The audience is a mix of general public and professionals. Use clear accessible language. Tone: neutral and factual. Format your response EXACTLY like this with no extra text before or after. TITLE: [title here] SLUG: [url-friendly-title-with-hyphens] DESCRIPTION: [one sentence summary] ARTICLE: [article content in markdown]"
+prompt = "You are writing for the personal website of Maryam Alka, an AI researcher and Applied Mathematician at the University of Birmingham working on AI-driven mathematical models for cancer treatment. Write a high quality 500-word blog article about: " + topic + ". IMPORTANT: This article must lead with AI and technology as the primary focus. Mathematics and oncology are supporting context only. The reader should finish the article thinking of the author as an AI expert in healthcare. Use clear accessible language. Tone: neutral and factual. First person where natural. Format your response EXACTLY like this with no extra text before or after. TITLE: [title here] SLUG: [url-friendly-title-with-hyphens] DESCRIPTION: [one sentence summary] ARTICLE: [article content in markdown]"
 
 response = client.messages.create(
     model="claude-opus-4-20250514",
