@@ -1,3 +1,3 @@
-module github.com/adityatelange/hugo-PaperMod
+module github.com/maryamalka85/maryamalka.it.com
 
-go 1.12
+go 1.21
