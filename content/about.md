@@ -45,10 +45,9 @@ AI in Healthcare, Mathematical Oncology, Phase-Field Modelling, Inverse Problems
 - **LMS Early Career Researchers Travel Grant**, London Mathematical Society, 2025
 - **Travel Grant Recipient**, SMB Cell and Developmental Biology Subgroup, 2025
 - **Registered Participant**, Fields Institute for Research in Mathematical Sciences — Mathematical Oncology: Crossroads of Analysis, Modelling and Simulation, Toronto, Canada, 2025
+[Fields Institute Programme](http://www.fields.utoronto.ca/activities/24-25/oncology-crossroads)
 - **Poster Presenter**, British Mathematical Colloquium / British Applied Mathematics Colloquium (BMC-BAMC), Exeter, UK, 2025
 - **Presenter**, Retreat for Women in Applied Mathematics, Vietnam, 2025
-
-[Fields Institute Programme](http://www.fields.utoronto.ca/activities/24-25/oncology-crossroads)
 
 ## Professional Recognition
 
