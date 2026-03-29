@@ -1,0 +1,42 @@
+---
+title: "From Medicine to Mathematics: My Unexpected Journey into AI Research"
+date: 2026-03-01
+description: "I was admitted to study medicine. Fate had other plans — and I am grateful every day."
+tags: ["personal", "journey", "mathematical oncology"]
+---
+
+I was supposed to be a doctor.
+
+I grew up in northern Nigeria, moving from state to state as my father's banking career took our family across the region. It was a childhood of constant adjustment — new schools, new friends, new cities — but mathematics was always the same everywhere I went. Reliable, consistent, and somehow mine.
+
+When I was admitted to Bayero University Kano to study medicine, it felt like the natural destination. Medicine was prestigious, purposeful, the kind of career that made sense to everyone around me. I had worked hard to get there.
+
+But at the point of registration, everything changed. The circumstances that day meant I could not proceed with medicine. I was redirected to mathematics.
+
+I was not happy about it.
+
+## What I did not know then
+
+I did not know that mathematics would take me further than medicine ever could have — at least the version of medicine I had imagined for myself. I did not know that equations could describe the behaviour of tumours, that computation could simulate how cancer responds to drugs, that a mathematician could contribute meaningfully to the fight against one of the world's most complex diseases.
+
+I did not know any of that at the registration desk in Kano, frustrated and uncertain about a future that had just been rewritten without my permission.
+
+What I did know, within months of starting, was that I loved it. The rigour, the elegance, the way a well-constructed proof felt like a small act of creation. Mathematics rewarded persistence and precision — two things I had developed during years of moving schools and starting over.
+
+## The long road
+
+My path after BUK was not straight. I studied information technology, then pure and applied mathematics at postgraduate level. I worked in government — at the Federal Inland Revenue Service, the Securities and Exchange Commission, the Standards Organisation of Nigeria. I taught mathematics in classrooms with too many students and not enough resources.
+
+None of it was wasted. The government work taught me how institutions function and how data drives decisions. The teaching taught me how to explain complex ideas simply — a skill that turns out to be essential in research. The mathematics underpinned all of it.
+
+In 2022 I received a scholarship to pursue a PhD at the University of Birmingham. The focus: mathematical and computational modelling of tumour growth. AI-driven approaches to understanding how cancer behaves, responds to chemotherapy, and adapts under stress.
+
+The girl who was supposed to study medicine is now building mathematical models that could one day help personalise cancer treatment. Fate, it turns out, had a longer plan than I did.
+
+## What this journey taught me
+
+I have learned that disruption is not the same as failure. The moment at that registration desk felt like a door closing. It was actually a door opening — to a field I did not know existed, to a career I could not have imagined, to a version of myself I had not yet met.
+
+If you are early in your journey — uncertain, redirected, wondering whether the path you are on is the right one — I want you to know that the destination is not always visible from the starting point. Sometimes you have to trust the mathematics of the situation: that the variables you cannot yet see will, in time, resolve into something meaningful.
+
+Mine did. And I am still enjoying the journey.
