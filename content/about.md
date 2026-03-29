@@ -3,14 +3,9 @@ title: "About"
 layout: "page"
 url: "/about/"
 ---
----
-title: ""
-layout: "page"
-url: "/about/"
-hidemeta: true
----
 
-![Maryam Alka](../maryam.png)
+
+![Maryam Alka](../1150.jpeg)
 
 # Maryam Alka
 
