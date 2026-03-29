@@ -3,23 +3,47 @@ title: "About"
 layout: "page"
 url: "/about/"
 ---
+---
+title: ""
+layout: "page"
+url: "/about/"
+hidemeta: true
+---
 
-I am a PhD researcher at the University of Birmingham developing mathematical models of how tumours grow, respond to chemotherapy, and adapt under oxygen stress. My work sits at the intersection of applied mathematics, computational biology, and AI — building tools that could one day help personalise cancer treatment.
+![Maryam Alka](../maryam.png)
 
-## Research
+# Maryam Alka
 
-My PhD focuses on mechanochemical phase-field modelling of tumour dynamics under paclitaxel treatment and hypoxic stress. I use the Allen-Cahn formulation implemented in FEniCS, a powerful open-source platform for solving partial differential equations, to simulate how tumours evolve and respond to treatment.
+AI Researcher · Applied Mathematician · Mathematical Oncologist
 
-## Beyond Research
+I build **AI-driven mathematical models** of tumour growth and cancer treatment response. I develop **phase-field simulations** of how tumours evolve under chemotherapy and hypoxic stress, working at the frontier of **AI in healthcare**. My research at the University of Birmingham applies inverse modelling and machine learning to move cancer treatment closer to personalisation — designed for this patient, this tumour, this moment.
 
-I am a Data Analyst at the Biomedical Science Research and Training Centre (BioRTC) supporting a Wellcome Trust project, and a Lecturer in Mathematics and Computing at QA Higher Education in the UK.
+I have worked across **Nigeria and the United Kingdom** in academia, government, and research — bringing computational rigour and real-world perspective to every problem I tackle.
 
-I hold degrees in Pure and Applied Mathematics, Information Technology, and Data Science, and have worked across Nigeria and the UK in academia, government, and research.
+## Education
 
-I am a member of the American Mathematical Society, European Women in Mathematics, and the Society for Mathematical Biology.
+- **PhD** Applied Mathematics — University of Birmingham *(in progress)*
+- **Professional Diploma** Data Science — African University of Science and Technology
+- **MSc** Pure and Applied Mathematics — African University of Science and Technology
+- **MSc** Information Technology *(First Class)* — National Open University
+- **BSc** Mathematics *(2:1)* — Bayero University Kano
+
+## Research Interests
+
+AI in Healthcare, Mathematical Oncology, Phase-Field Modelling, Inverse Problems, Bayesian Parameter Estimation, Uncertainty Quantification, Machine Learning, Personalised Medicine, Computational Biology, FEniCS Simulation
+
+## Selected Awards
+
+- LANDAHIL Grant — 2025
+- LMS Early Career Researchers Travel Grant — 2025
+- SMB Cell and Developmental Biology Subgroup Travel Grant — 2025
+- PTDF OSS PhD Scholarship — 2022/2023
+
+
 
 ## Get in Touch
 
 I am always happy to connect with researchers, collaborators, and anyone curious about mathematical oncology or AI in healthcare.
 
 📧 mxa1541@student.bham.ac.uk
+## Latest Writing
