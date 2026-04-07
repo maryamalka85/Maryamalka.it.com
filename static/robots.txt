@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://maryamalka.it.com/sitemap.xml
